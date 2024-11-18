@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Recipe</title>
+<style>
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4 {
+    color: #ff6347;
+    margin-bottom: 10px;
+    
+
+}
+
+img{
+    height: 300px;
+    width: 150px;
+    border-radius: 10px;
+    gap: 10px
+    ;
+}
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      text-align: center;
+}
+.start img{
+    max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+
+
+.Proposaltemplate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    width: 80%; 
+    max-width: 800px;
+}
+
+.Proposaltemplate h4{
+    font-size: 1.5em;
+    border: 1px solid #ff6347;
+    border-radius: 10px;
+    padding: 4px 8px;
+    display: inline-block; 
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+   
+     
+}
+
+.Proposaltemplate a {
+    word-break: break-all; 
+}
+.tipcontainer, .start, .timer, .Quorumguide {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.tipcontainer hr, .start hr, .timer hr, .Quorumguide hr {
+    border: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.Proposaltemplate ul {
+    list-style: none;
+	list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+	
+}
+
+.Proposaltemplate li {
+    margin-bottom: 10px;
+}
+
+.Proposaltemplate h2, .Proposaltemplate h3, .Proposaltemplate h4 {
+    color: #ff6347;
+}
+
+.Proposaltemplate > h4 {
+    font-size: 1.5em;
+    border: 1px solid #ff6347;
+    border-radius: 10px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Quorumguide ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Quorumguide li {
+    margin-bottom: 8px;
+}
+
+.timer-images {
+    display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .timer-images img {
+        display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px; 
+      flex: 0 0 23%;
+    }
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .tipcontainer, .start, .timer, .Quorumguide {
+        width: 100%;
+        padding: 15px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .timer-images {
+        justify-content: center;
+    }
+
+    .timer-images img {
+        flex: 0 0 45%;
+    }
+    .start img {
+        max-width: 80%;
+    }
+
+    .Proposaltemplate {
+        margin: 15px;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .Proposaltemplate h2,
+    .Proposaltemplate h3,
+    .Proposaltemplate h4 {
+        font-size: 1.5em;
+    margin-bottom: 2%;
+    }
+    .Proposaltemplate ul {
+        list-style: none;
+        padding: 10px;
+        margin-left: 10px;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+    }
+    .Proposaltemplate h4 + ul, 
+    .Proposaltemplate li {
+        font-size: 1em;
+    }
+    .Proposaltemplate a {
+    word-break: break-all; 
+    }
+
+    .Proposaltemplate li {
+        margin-bottom: 8px;
+        font-size: 1em;
+    }
+
+
+
+
+    .Proposaltemplate img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<h1>PizzaDAO Proposal Recipe</h1>
+<br>
+<div class="tipcontainer">
+	<h3> Before you begin, here are some tips from the famiglia 🤌</h3>
+<hr>
+	<ul>
+	<li> Engage the community: Participate in the PizzaDAO Discord to establish yourself within the pizza mafia. Join community calls on Sundays at 1pm EST and join crew calls throughout the week.
+</li>
+<br>
+    <li>Network and build relationships: Establish connections with other PizzaDAO members who share common interests. Building a network within the community can lead to increased support for your proposal.
+ </li>
+<br>
+    <li>Build a strong case: Clearly explain how your proposal aligns with PizzaDAO's mission and benefits the community. Use compelling language and visuals to make your case stand out.
+ </li>
+<br>
+    <li> Answer questions: Be responsive to community members' questions and concerns. Providing thorough responses can build trust and garner more votes </li>
+  <br>  
+    <li>Collaborate with others: Seek endorsements or partnerships with established members or projects within PizzaDAO for credibility and more votes. </li>
+<br>
+    <li> Communicate updates: Update the community on your proposal's progress. Share achievements and milestones in general chat or in the thread attached to your proposal</li>
+<br>
+    <li> Socialize your proposal: Share it strategically in relevant channels to increase visibility. Bring it up on PizzaDAO's community calls and ask your friends within the DAO to support you.
+</li>
+<br>
+<ul>
+    <p> By focusing on these aspects, you can significantly increase your chances of getting more 👍 votes for your proposal in PizzaDAO. 
+</p>
+</div>
+<br>
+	<p>Remember, only Box and Pizza NFT holders are able to submit PizzaDAO proposals. If you do not have the nft, you can purchase a box at <a href="https://www.rarepizzas.com">RarePizzas.com</a>  
+	</p>
+	<br>
+	<p>You can also get somebody who already has a NFT to vouch for you. These
+		people would be called 'PizzaDAO Proposal Sponsors'. You can put their username in your proposal.
+	</p>
+<h1>How to Connect Your Web3 Wallet to CollabLand in PizzaDAO</h1>
+    <p>Follow these steps to connect your wallet and get your role:</p>
+
+    <ol>
+        <li>
+            <strong>Go to the #collabland-join Channel:</strong>
+            <ul>
+                <li>Open Discord and navigate to the PizzaDAO server.</li>
+                <li>Find the channel named <code>#collabland-join</code>.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Connect Your Wallet:</strong>
+            <ul>
+                <li>Look for our Mafia Bouncer bot asking you to connect your wallet.</li>
+                <li>Click on the connection prompt or type <code>/connect</code> if available.</li>
+                <li>Choose your wallet (like MetaMask) and confirm the connection on your wallet app.</li>
+            </ul>
+        </li>
+
+        <li>
+            <strong>Get Your Role:</strong>
+            <ul>
+                <li>After connecting, the bot will check if you own a 'Rare Pizza Box' or 'Rare Pizza NFT'.</li>
+                <li>If you do, you'll automatically get the 'Box Mafia' or 'Pizza Mafia' role.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <p>Note: Make sure you're connecting to the official bot to avoid scams.</p>
+<div class="start">
+    <img src="./pizzadaogif.gif" alt="Seshbot Poll Selector">
+    <h2> Starting Your Proposal </h2>
+<br>
+	<ol> 
+    <li> 
+Connect to our poll creator to start constructing your proposal. 
+	   <br>
+	    <a href="https://sesh.fyi/dashboard/812097286003359764/polls/create?channel_id=969802552495456256">PizzaDAO Poll Creator</a>
+</li>
+<br>
+    <li> 
+Poll Title: Enter the name of your event
+<br>
+E.g: ETHDenver Pizza Party
+
+    </li>
+	<br>
+    <li> 
+Channel: Ensure that “proposals” is selected for this option. This will make your proposal automatically appear in our proposal channel.
+</li>
+	<br>
+    <li>Poll Options: You will need to enter the following three options in this order.
+<br>
+	    <ul>
+    <li>
+👍 Aye
+</li>
+    <li>
+👎 Nay
+</li>
+    <li>
+🤐 Abstain
+</li>
+</ul>	
+</li>
+<br>
+	<li>
+		Description: Copy and Paste the following template and fill in each section.
+<br>
+</li>
+	<br>
+	<p>
+<h4>Event/Party Proposal:
+
+    </h4>
+ <ul>
+<li>**Event:**</li>
+<li>**Member:**</li>
+<li>**PizzaDAO Proposal Sponsor:**</li>
+<li>**Location:**</li>
+<li>**Date:**</li>
+<li>**Comp/Cost:**</li>
+<li>**Budget Breakdown:**</li>
+<li>** 👍 Ayes + Abstains Needed:** 15 for $625 or less, 25 for $625-2,500, 35 for everything else</li>
+<li>**Estimated Attendance:**</li>
+<li>**Other Confirmed Event Sponsors:**</li>
+<li>**Ordering Pizza From:**</li>
+<li>**Description & How This Benefits PizzaDAO:**</li>
+<li>I have reviewed the Standard Operating Procedure (accessible at <a href="https://docs.google.com/document/d/1pB1oNcfBj_LHhljzOrV97BU1pfr77msZnZXdIsT_06g/edit?usp=sharing" target="_blank">PizzaDAO SOP</a>) and hereby acknowledge my commitment to adhere to its terms.</li>
+</ul>
+		
+	</p>
+		<br>
+<li>
+	Leave "allow anyone to add poll option" deselected
+			
+	</li>
+		<br>
+		<li>
+
+	Mentions: In 'Users', tag yourself, your proposal sponsor (if applicable), and Don Scrimmy John. In 'Roles', tag @Super Voter
+		</li>
+		<br>
+		<li>
+			Keep Single Vote Per User selected.
+		</li>
+<br>
+		<li>
+			Select Anonymous.
+		</li>
+	<br>
+		<li>
+			End Time: 'In 7 Days'
+		</li>
+	<br>
+		<li>
+			Image: Insert image link here. Flyer images can be powerful to make your proposal stand out!
+		</li>
+	<br>
+		<li>
+			Role Restrictions: Enter 'Box Mafia' & 'Pizza Mafia'. This is very important as we only allow our box and pizza nft holders the ability to vote.
+		</li>
+	<br>
+		<p>Select Create Poll button below. Congratulations!! You just made your own PizzaDAO Proposal!! 🍕  
+		</p>
+		
+</div>
+	<p>
+	Didn't see the proposal template you needed? Visit our other <a href="https://docs.google.com/document/d/10tTWXE76vDTawuYtzesCfbpoeXI36gItMsaEmC0UrzM/edit">proposal templates</a>!!
+	</p>
+</ol>
+	<p>
+		<h2> '👍 Ayes + Abstains Needed' Guide </h2>
+<br>
+<ul>
+    <h3> Event/Party 👍 Needed: </h3>
+<li>
+15 for $625 or less
+</li>
+<li>
+25 for $625-$2500
+</li>
+<li>
+35 for Everything Else
+</li>	
+</ul>
+		</p>
+
+
+</body>
+</html>
