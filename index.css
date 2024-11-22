@@ -1,0 +1,193 @@
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+img{
+    height: 300px;
+    width: 150px;
+    border-radius: 10px;
+    gap: 10px
+    ;
+}
+.start{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      text-align: center;
+}
+.start img{
+    max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+    }
+
+
+.Proposaltemplate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    width: 80%; 
+    max-width: 800px;
+}
+
+.Proposaltemplate h4{
+    font-size: 1.5em;
+    border: 1px solid #ff6347;
+    border-radius: 10px;
+    padding: 4px 8px;
+    display: inline-block; 
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Proposaltemplate a {
+    word-break: break-all; 
+}
+
+.tipcontainer ul li {
+    padding-bottom: 10px;
+    font-weight: light;
+}
+
+.tipcontainer, .start, .timer, .Quorumguide {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.tipcontainer hr, .start hr, .timer hr, .Quorumguide hr {
+    border: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+.Proposaltemplate ul {
+    list-style: none;
+	list-style-type: none;
+    padding: 0;
+    font-size: 1em;
+    text-align: center;
+	
+}
+
+.Proposaltemplate li {
+    margin-bottom: 10px;
+}
+
+.Proposaltemplate h2, .Proposaltemplate h3, .Proposaltemplate h4 {
+    color: #ff6347;
+}
+
+.Proposaltemplate > h4 {
+    font-size: 1.5em;
+    border: 1px solid #ff6347;
+    border-radius: 10px;
+    padding: 4px 8px;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Quorumguide ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Quorumguide li {
+    margin-bottom: 8px;
+}
+
+.timer-images {
+    display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .timer-images img {
+        display: block;
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px; 
+      flex: 0 0 23%;
+    }
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .tipcontainer, .start, .timer, .Quorumguide {
+        width: 100%;
+        padding: 15px;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .timer-images {
+        justify-content: center;
+    }
+
+    .timer-images img {
+        flex: 0 0 45%;
+    }
+    .start img {
+        max-width: 80%;
+    }
+
+    .Proposaltemplate {
+        margin: 15px;
+        width: 100%;
+        max-width: none;
+    }
+    
+    .Proposaltemplate h2,
+    .Proposaltemplate h3,
+    .Proposaltemplate h4 {
+        font-size: 1.5em;
+    margin-bottom: 2%;
+    }
+    .Proposaltemplate ul {
+        list-style: none;
+        padding: 10px;
+        margin-left: 10px;
+        justify-content: center;
+        text-align: center;
+        font-size: 1em;
+    }
+    .Proposaltemplate h4 + ul, 
+    .Proposaltemplate li {
+        font-size: 1em;
+    }
+    .Proposaltemplate a {
+    word-break: break-all; 
+    }
+
+    .Proposaltemplate li {
+        margin-bottom: 8px;
+        font-size: 1em;
+    }
+
+
+
+
+    .Proposaltemplate img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
