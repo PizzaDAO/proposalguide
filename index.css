@@ -1,143 +1,86 @@
-
+```css
 body {
-    font-family: 'Rubik', sans-serif;
+    font-family: __Rubik_5c20f6, __Rubik_Fallback_5c20f6, sans-serif;
     background-color: #f8f8f8;
     color: #333;
     margin: 0;
     padding: 0;
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5 {
-    color: #ff6347;
+    color: #ff6347; 
     margin-bottom: 10px;
+    font-family: __Gluten_1d6f12, __Gluten_Fallback_1d6f12, sans-serif;
 }
 
 img{
-    height: 300px;
-    width: 150px;
-    border-radius: 10px;
-    gap: 10px
-    ;
-}
-.start{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-      text-align: center;
-}
-.start img{
+    height: auto;
     max-width: 100%;
-      height: auto;
-      margin: 0 auto 20px;
-    }
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
 
-
-.Proposaltemplate {
+.start {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 30px;
-    width: 80%; 
-    max-width: 800px;
-}
-
-.Proposaltemplate h4{
-    font-size: 1.5em;
-    border: 1px solid #ff6347;
-    border-radius: 10px;
-    padding: 4px 8px;
-    display: inline-block; 
-    margin: 0;
     text-align: center;
-    margin-top: 20px;
 }
 
-.Proposaltemplate a {
-    word-break: break-all; 
+.start img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
 }
 
-.tipcontainer ul li {
-    padding-bottom: 10px;
-    font-weight: light;
-}
-
-.tipcontainer, .start, .timer, .Quorumguide {
+.ProposalTemplate, .tipcontainer, .start, .timer, .Quorumguide {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
     width: 80%;
     max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 }
 
-.tipcontainer hr, .start hr, .timer hr, .Quorumguide hr {
-    border: 1px solid #ccc;
-    margin: 15px 0;
+.tipcontainer ul li, .Quorumguide ul li {
+    padding-bottom: 10px;
+    font-weight: 300;
 }
 
-.Proposaltemplate ul {
-    list-style: none;
-	list-style-type: none;
-    padding: 0;
-    font-size: 1em;
-    text-align: center;
-	
+hr {
+    border: 1px solid #e5e7eb;
 }
 
-.Proposaltemplate li {
-    margin-bottom: 10px;
+button, a {
+    color: inherit;
+    text-decoration: none;
+    font-family: inherit;
+    transition: all 0.1s ease-in-out;
 }
 
-.Proposaltemplate h2, .Proposaltemplate h3, .Proposaltemplate h4 {
-    color: #ff6347;
-}
-
-.Proposaltemplate > h4 {
-    font-size: 1.5em;
-    border: 1px solid #ff6347;
-    border-radius: 10px;
-    padding: 4px 8px;
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.Quorumguide ul {
-    list-style: none;
-    padding: 0;
-}
-
-.Quorumguide li {
-    margin-bottom: 8px;
+button:hover, a:hover {
+    background-color: #facc15;
+    color: #000;
 }
 
 .timer-images {
     display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-
-    .timer-images img {
-        display: block;
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px; 
-      flex: 0 0 23%;
-    }
-
-
-@media only screen and (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
-
-    .tipcontainer, .start, .timer, .Quorumguide {
-        width: 100%;
-        padding: 15px;
-    }
-
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 12px;
 }
+
+.timer-images img {
+    flex: 0 0 23%;
+}
+
 @media only screen and (max-width: 768px) {
+    .ProposalTemplate, .tipcontainer, .start, .timer, .Quorumguide {
+        width: 100%;
+    }
+    
     .timer-images {
         justify-content: center;
     }
@@ -145,49 +88,22 @@ img{
     .timer-images img {
         flex: 0 0 45%;
     }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
     .start img {
         max-width: 80%;
     }
-
-    .Proposaltemplate {
-        margin: 15px;
-        width: 100%;
-        max-width: none;
-    }
     
-    .Proposaltemplate h2,
-    .Proposaltemplate h3,
-    .Proposaltemplate h4 {
-        font-size: 1.5em;
-    margin-bottom: 2%;
-    }
-    .Proposaltemplate ul {
+    .ProposalTemplate ul {
         list-style: none;
         padding: 10px;
-        margin-left: 10px;
-        justify-content: center;
-        text-align: center;
-        font-size: 1em;
-    }
-    .Proposaltemplate h4 + ul, 
-    .Proposaltemplate li {
-        font-size: 1em;
-    }
-    .Proposaltemplate a {
-    word-break: break-all; 
-    }
-
-    .Proposaltemplate li {
-        margin-bottom: 8px;
-        font-size: 1em;
-    }
-
-
-
-
-    .Proposaltemplate img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
+        margin-left: 0;
+        text-align: left;
     }
 }
+'''
