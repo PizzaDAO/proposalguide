@@ -6,33 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposal Recipe</title>
-
-    <link rel="stylesheet" href="./index.css" />
     <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        href="https://bootswatch.com/5/solar/bootstrap.rtl.min.css" rel="stylesheet" 
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
+ <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap">
 </head>
 <body>
-    <header class="container-fluid d-flex justify-content-center p-3">
+     <header class="container-fluid d-flex justify-content-center p-3">
 	    <h1 class="">PizzaDAO Proposal Recipe</h1>
     </header>
     <main class="container">
         <section id="intro" class="text-start">
-            This recipe describes step by step how to submit a PizzaDAO proposal, also checkout these 
-            <a 
-                role="button" class="text-primary" 
-                data-bs-toggle="modal" data-bs-target="#tip-modal"
-            >list of tips</a> on how best to promote your proposal. Remember, only Box and Pizza NFT holders are able to submit PizzaDAO proposals. 
-            If you do not have the nft, you can purchase a box at <a target="_blank" href="https://www.rarepizzas.com">RarePizzas.com</a>. <br />
-            You can also get an NFT holder to vouch for you. These people would be called 'PizzaDAO Proposal Sponsors'. 
-            You can put their username in your proposal.
+            Here's a recipe for getting some dough from the pizza mafia, plus a
+		<a href= "https://docs.google.com/document/d/14EMaaDTrVPlU1ofxyhFJPUSUYtsYITtm67MOvkUlyO8/edit"
+            >list of tips</a> on how to curry favor with the famiglia. Only PizzaDAO NFT holders can submit PizzaDAO proposals, capiche? 
+            If you don't have one, you can get one at <a target="_blank" href="https://www.rarepizzas.com">RarePizzas.com</a> or
+            ask a holder to sponsor your proposal.
         </section>
         <section id="claim-role" class="mt-4">
-            <h4>Connect Wallet to CollabLand in PizzaDAO Discord to Claim Role</h4>
+            <h2>Connect Wallet to CollabLand in PizzaDAO Discord to Claim Role</h2>
             <p>Follow these steps to connect your wallet and get your role, skip this steps if you already have Box or Pizza Mafia role:</p>
             <ol class="mb-0">
                 <li>
@@ -64,7 +59,7 @@
         </section>
         <section id="create-proposal" class="mt-4">
             <!-- <img src="./pizzadaogif.gif" alt="Seshbot Poll Selector"> -->
-            <h4>Start Creating Your Proposal</h4>
+            <h2>Start Creating Your Proposal</h2>
             To create your proposal, first connect to the 
             <a href="https://sesh.fyi/dashboard/812097286003359764/polls/create?channel_id=969802552495456256" target="_blank">
                 PizzaDAO Poll Creator
@@ -98,28 +93,44 @@
                     Fill the description field following the template provided below and if its not fit your proposal,<br />
                     check <a href="https://docs.google.com/document/d/10tTWXE76vDTawuYtzesCfbpoeXI36gItMsaEmC0UrzM/edit" target="_blank">here</a> 
                     for more templates.
-                    <h5>Event/Party Proposal:</h5>
-                    <ul>
-                        <li>**Event:**</li>
-                        <li>**Member:**</li>
-                        <li>**PizzaDAO Proposal Sponsor:**</li>
-                        <li>**Location:**</li>
-                        <li>**Date:**</li>
-                        <li>**Comp/Cost:**</li>
-                        <li>**Budget Breakdown:**</li>
-                        <li>** 👍 Ayes + Abstains Needed:** 15 for $625 or less, 25 for $625-2,500, 35 for everything else</li>
-                        <li>**Estimated Attendance:**</li>
-                        <li>**Other Confirmed Event Sponsors:**</li>
-                        <li>**Ordering Pizza From:**</li>
-                        <li>**Description & How This Benefits PizzaDAO:**</li>
-                        <li>
-                            I have reviewed the Standard Operating Procedure (accessible at 
-                            <a 
-                                href="https://docs.google.com/document/d/1pB1oNcfBj_LHhljzOrV97BU1pfr77msZnZXdIsT_06g/edit?usp=sharing" 
-                                target="_blank"
-                            >PizzaDAO SOP</a>)<br /> and hereby acknowledge my commitment to adhere to its terms.</li>
-                    </ul>
-                </li>
+                    <h3>Event/Party Proposal:</h3>
+                   <textarea id="proposalTemplate" rows="10" cols="50" placeholder="**Event:**&#10;**Member:**&#10;**PizzaDAO Proposal Sponsor:**&#10;**Location:**&#10;**Date:**&#10;**Comp/Cost:**&#10;**Budget Breakdown:**&#10;** 👍 Ayes + Abstains Needed:** 15 for $625 or less, 25 for $625-2,500, 35 for everything else&#10;**Estimated Attendance:**&#10;**Other Confirmed Event Sponsors:**&#10;**Ordering Pizza From:**&#10;**Description & How This Benefits PizzaDAO:**&#10;I have reviewed the Standard Operating Procedure (accessible at [PizzaDAO SOP](https://docs.google.com/document/d/1pB1oNcfBj_LHhljzOrV97BU1pfr77msZnZXdIsT_06g/edit?usp=sharing) and hereby acknowledge my commitment to adhere to its terms."></textarea>
+		<script>
+    document.getElementById('proposalTemplate').addEventListener('focus', function() {
+        if (this.value === '') {
+            this.value = this.placeholder;
+        }
+    });
+
+    document.getElementById('proposalTemplate').addEventListener('blur', function() {
+        if (this.value === this.placeholder) {
+            this.value = '';
+        }
+    });
+
+    document.getElementById('proposalTemplate').form.onsubmit = function() {
+        var textarea = document.getElementById('proposalTemplate');
+        if (textarea.value === textarea.placeholder) {
+            textarea.value = '';
+        }
+        return true;
+    };
+</script>
+			<button id="copyButton" onclick="copyToClipboard()">Copy Proposal</button>
+                <script>
+function copyToClipboard() {
+    var copyText = document.getElementById("proposalTemplate");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.value).then(() => {
+        alert("Copied the proposal text to clipboard");
+    }, () => {
+        alert("Failed to copy text");
+    });
+}
+</script>
+		</li>
+		    <hr>
                 <li>
                     <strong>Leave "allow anyone to add poll option" deselected</strong>
                 </li>
@@ -162,7 +173,7 @@
                 </li>  
             </ol> 
             <p>
-                <h6 class="d-inline-block">Congratulations!!</h6> You just made your own PizzaDAO Proposal!! 🍕<br />
+                <h4 class="d-inline-block">Congratulations!!</h4> You just made your own PizzaDAO Proposal!! 🍕<br />
                 Didn't see the proposal template you needed? Visit our other 
                 <a href="https://docs.google.com/document/d/10tTWXE76vDTawuYtzesCfbpoeXI36gItMsaEmC0UrzM/edit">proposal templates</a>!!
             </p>
@@ -175,47 +186,6 @@
                 <li>25 for $625-$2500</li>
                 <li>35 for Everything Else</li>	
             </ul>
-        </section>
-        <section id="tip-modal" class="modal fade" tabindex="-1" aria-labelledby="tipModalLabel" aria-hidden="true">
-            <div class="modal-dialog mt-4 modal-lg">
-                <div class="modal-content tipcontainer mb-2">
-                    <div class="modal-header p-0 position-relative">
-                        <h4 class="pt-2 mt-2"> Before you begin, here are some tips from the famiglia 🤌</h4>
-                        <button type="button" class="position-absolute end-0 top-0 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div> 
-                    <ul class="modal-body">
-                        <li> 
-                            <strong>Engage the community:</strong> Participate in the PizzaDAO Discord to establish yourself within the pizza mafia. 
-                            Join community calls on Sundays at 1pm EST and join crew calls throughout the week.
-                        </li>
-                        <li>
-                            <strong>Network and build relationships:</strong> Establish connections with other PizzaDAO members who share common interests. 
-                            Building a network within the community can lead to increased support for your proposal.
-                        </li>
-                        <li>
-                            <strong>Build a strong case:</strong> Clearly explain how your proposal aligns with PizzaDAO's mission and benefits the community. 
-                            Use compelling language and visuals to make your case stand out.
-                        </li>
-                        <li>
-                            <strong>Answer questions:</strong> Be responsive to community members' questions and concerns. 
-                            Providing thorough responses can build trust and garner more votes 
-                        </li> 
-                        <li>
-                            <strong>Collaborate with others:</strong> Seek endorsements or partnerships with established 
-                            members or projects within PizzaDAO for credibility and more votes. 
-                        </li>
-                        <li> 
-                            <strong>Communicate updates:</strong> Update the community on your proposal's progress.
-                            Share achievements and milestones in general chat or in your proposal's thread.
-                        </li>
-                        <li> 
-                            <strong>Socialize your proposal:</strong> Share it strategically in relevant channels, 
-                            bring it up on PizzaDAO's community calls, and ask your friends within the DAO to support you.
-                        </li>
-                    </ul>
-                    <p> By focusing on these aspects, you can significantly increase your chances of getting more 👍 votes for your proposal in PizzaDAO. </p>
-                </div>
-            </div>
         </section>
     </main>
     <footer class="border p-2 d-flex flex-column justify-content-center text-center">
