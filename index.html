@@ -18,47 +18,50 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="rubik-header-text overscroll-nonetext-black">
-    <header class="z-10 mx-auto bg-yellow-400 lg:sticky lg:top-0 lg:px-6">
-        <nav class="flex items-center justify-between px-10 py-4 ">
+<body class="rubik-header-text overscroll-nonetext-black lg:text-lg">
+    <header class="z-10 mx-auto bg-yellow-400 lg:sticky lg:top-0 p-0 lg:px-6">
+        <nav class="flex flex-col md:flex-row items-center justify-center md:justify-between md:px-10 py-4 ">
             <img src="assets/logo.png" alt="Pizza Faucet" class="h-6 w-auto lg:h-8 logo" />
-            <h1 class="text-xl font-semibold lg:text-3xl lg:pe-20">PizzaDAO Proposal Recipe</h1>
+            <h1 class="text-center text-xl font-semibold md:text-2xl lg:text-3xl lg:pe-20">PizzaDAO Proposal Recipe</h1>
         </nav>
     </header>
-    <main class="container">
+    <main class="container p-3 md:px-10">
         <section id="intro" class="text-start pt-3">
             Here's a recipe for getting some dough from the pizza mafia, plus a
             <a role="button" class="text-[#EF4444] font-semibold gluten-text" data-bs-toggle="modal" data-bs-target="#tip-modal">list of tips</a> 
             on how to curry favor with the famiglia. Only PizzaDAO NFT holders can submit PizzaDAO proposals, capiche? 
-            If you don't have one, you can get one at <a target="_blank" href="https://www.rarepizzas.com">RarePizzas.com</a> or
+            If you don't have one, you can get one at 
+            <a  class="text-[#EF4444] font-semibold gluten-text" target="_blank" href="https://www.rarepizzas.com">RarePizzas.com</a> or
             ask a holder to sponsor your proposal.
         </section>
         <section id="claim-role" class="mt-4">
-            <h4 class="text-lg font-bold">Connect Wallet to CollabLand in PizzaDAO Discord to Claim Role</h4>
+            <h4 class="text-lg lg:text-xl font-bold">Connect Wallet to CollabLand in PizzaDAO Discord to Claim Role</h4>
             <p>Follow these steps to connect your wallet and get your role, skip this steps if you already have Box or Pizza Mafia role:</p>
-            <ol class="mb-0">
+            <ol class="mb-0 pt-2">
                 <li>
-                    <strong>Go to the #collabland-join Channel:</strong>
+                    <strong class="gluten-text pt-2">Go to the #collabland-join Channel:</strong>
                     <ul>
                         <li>Open Discord and navigate to the PizzaDAO server.</li>
-                        <li>Find the channel named <code>#collabland-join</code>.</li>
+                        <li>Find the channel named <code class="gluten-text">#collabland-join</code>.</li>
                     </ul>
                 </li>
         
                 <li>
-                    <strong>Connect Your Wallet:</strong>
+                    <strong class="gluten-text pt-2">Connect Your Wallet:</strong>
                     <ul>
                         <li>Look for our Mafia Bouncer bot asking you to connect your wallet.</li>
-                        <li>Click on the connection prompt or type <code>/connect</code> if available.</li>
+                        <li>Click on the connection prompt or type <code class="gluten-text">/connect</code> if available.</li>
                         <li>Choose your wallet (like MetaMask) and confirm the connection on your wallet app.</li>
                     </ul>
                 </li>
         
                 <li>
-                    <strong>Get Your Role:</strong>
+                    <strong class="gluten-text pt-2">Get Your Role:</strong>
                     <ul>
-                        <li>After connecting, the bot will check if you own a 'Rare Pizza Box' or 'Rare Pizza NFT'.</li>
-                        <li>If you do, you'll automatically get the 'Box Mafia' or 'Pizza Mafia' role.</li>
+                        <li>After connecting, the bot will check if you own a <span class="gluten-text">Rare Pizza Box</span> or 
+                            <span class="gluten-text">Rare Pizza NFT</span>.
+                        </li>
+                        <li>If you do, you'll automatically get the <span class="gluten-text">Box Mafia</span> or <span class="gluten-text">Pizza Mafia</span> role.</li>
                     </ul>
                 </li>
             </ol>
@@ -66,20 +69,20 @@
         </section>
         <section id="create-proposal" class="mt-4">
             <!-- <img src="./pizzadaogif.gif" alt="Seshbot Poll Selector"> -->
-            <h4>Start Creating Your Proposal</h4>
+            <h4 class="text-[#EF4444] text-lg lg:text-xl font-bold">Start Creating Your Proposal</h4>
             To create your proposal, first connect to the 
             <a href="https://sesh.fyi/dashboard/812097286003359764/polls/create?channel_id=969802552495456256" target="_blank">
                 PizzaDAO Poll Creator
             </a> and follow the following steps!
             <ol class="mt-2">
                 <li>
-                    <strong>Enter Poll Title:</strong> 
+                    <strong class="gluten-text">Enter Poll Title:</strong> 
                     <ul>
                         <li>Type in the name of your event. E.g: ETHDenver Pizza Party</li>
                     </ul>
                 </li>
                 <li> 
-                    <strong>Select Channel:</strong> 
+                    <strong class="gluten-text">Select Channel:</strong> 
                     <ul>
                         <li>
                             Ensure to select the “proposals” channel for this option, as
@@ -88,20 +91,16 @@
                     </ul>
                 </li>
                 <li>
-                    <strong>Fill Poll Options:</strong> <br />You will need to enter the following three options in this order.
-                    <ul>
-                        <li>Aye</li>
-                        <li>Nay</li>
-                        <li>Abstain</li>
-                    </ul>	
+                    <strong class="gluten-text">Fill Poll Options:</strong> <br />You will need to enter the following three options in this order.
+                    <p>Aye, Nay, Abstain</p>	
                 </li>
                 <li>
-                    <strong>Enter Description:</strong> <br />
-                    Fill the description field following the template provided below and if its not fit your proposal,<br />
-                    check <a href="https://docs.google.com/document/d/10tTWXE76vDTawuYtzesCfbpoeXI36gItMsaEmC0UrzM/edit" target="_blank">here</a> 
+                    <strong class="gluten-text">Enter Description:</strong> <br />
+                    Fill the description field following the template provided below and if its not fit your proposal. Check 
+                    <a class="gluten-text text-[#EF4444]" href="https://docs.google.com/document/d/10tTWXE76vDTawuYtzesCfbpoeXI36gItMsaEmC0UrzM/edit" target="_blank">here</a>, <br />
                     for more templates.
                     <h5>Event/Party Proposal:</h5>
-                    <ul>
+                    <ul class="">
                         <li>**Event:**</li>
                         <li>**Member:**</li>
                         <li>**PizzaDAO Proposal Sponsor:**</li>
@@ -123,35 +122,35 @@
                     </ul>
                 </li>
                 <li>
-                    <strong>Leave "allow anyone to add poll option" deselected</strong>
+                    <strong class="gluten-text">Leave "allow anyone to add poll option" deselected</strong>
                 </li>
                 <li>
-                    <strong>Select Mentions:</strong> <br />
+                    <strong class="gluten-text">Select Mentions:</strong> <br />
                     <ul>
                         <li>In 'Users', tag yourself, your proposal sponsor (if applicable), and Don Scrimmy John.</li>
                         <li>In 'Roles', tag @Super Voter</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Keep Single Vote Per User selected.</strong>    
+                    <strong class="gluten-text">Keep Single Vote Per User selected.</strong>    
                 </li>
                 <li>
-                    <strong>Select Anonymous.</strong>
+                    <strong class="gluten-text">Select Anonymous.</strong>
                 </li>
                 <li>
-                    <strong>Enter End Time:</strong> 
+                    <strong class="gluten-text">Enter End Time:</strong> 
                     <ul>
                         <li>Fill field with: 'In 7 Days'</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Enter Image:</strong>
+                    <strong class="gluten-text">Enter Image:</strong>
                     <ul>
                         <li>Insert link to image here. Flyer images can be powerful to make your proposal stand out!</li>
                     </ul>
                 </li>
                 <li>
-                    <strong>Select Role Restrictions:</strong> 
+                    <strong class="gluten-text">Select Role Restrictions:</strong> 
                     <ul>
                         <li>
                             Enter 'Box Mafia' & 'Pizza Mafia'. <br />
@@ -160,7 +159,7 @@
                     </ul>
                 </li>
                 <li>
-                    <strong>Select Create Poll button below.</strong>
+                    <strong class="gluten-text">Select Create Poll button below.</strong>
                 </li>  
             </ol> 
             <p>
@@ -182,36 +181,36 @@
             <div class="modal-dialog mt-4 modal-lg">
                 <div class="modal-content tipcontainer mb-2">
                     <div class="modal-header p-0 position-relative">
-                        <h4 class="pt-2 mt-2"> Before you begin, here are some tips from the famiglia 🤌</h4>
+                        <h4 class="pt-2 mt-2 text-md md:text-xl font-bold"> Before you begin, here are some tips from the famiglia 🤌</h4>
                         <button type="button" class="position-absolute end-0 top-0 btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div> 
                     <ul class="modal-body">
                         <li> 
-                            <strong>Engage the community:</strong> Participate in the PizzaDAO Discord to establish yourself within the pizza mafia. 
+                            <strong class="gluten-text">Engage the community:</strong> Participate in the PizzaDAO Discord to establish yourself within the pizza mafia. 
                             Join community calls on Sundays at 1pm EST and join crew calls throughout the week.
                         </li>
                         <li>
-                            <strong>Network and build relationships:</strong> Establish connections with other PizzaDAO members who share common interests. 
+                            <strong class="gluten-text">Network and build relationships:</strong> Establish connections with other PizzaDAO members who share common interests. 
                             Building a network within the community can lead to increased support for your proposal.
                         </li>
                         <li>
-                            <strong>Build a strong case:</strong> Clearly explain how your proposal aligns with PizzaDAO's mission and benefits the community. 
+                            <strong class="gluten-text">Build a strong case:</strong> Clearly explain how your proposal aligns with PizzaDAO's mission and benefits the community. 
                             Use compelling language and visuals to make your case stand out.
                         </li>
                         <li>
-                            <strong>Answer questions:</strong> Be responsive to community members' questions and concerns. 
+                            <strong class="gluten-text">Answer questions:</strong> Be responsive to community members' questions and concerns. 
                             Providing thorough responses can build trust and garner more votes 
                         </li> 
                         <li>
-                            <strong>Collaborate with others:</strong> Seek endorsements or partnerships with established 
+                            <strong class="gluten-text">Collaborate with others:</strong> Seek endorsements or partnerships with established 
                             members or projects within PizzaDAO for credibility and more votes. 
                         </li>
                         <li> 
-                            <strong>Communicate updates:</strong> Update the community on your proposal's progress.
+                            <strong class="gluten-text">Communicate updates:</strong> Update the community on your proposal's progress.
                             Share achievements and milestones in general chat or in your proposal's thread.
                         </li>
                         <li> 
-                            <strong>Socialize your proposal:</strong> Share it strategically in relevant channels, 
+                            <strong class="gluten-text">Socialize your proposal:</strong> Share it strategically in relevant channels, 
                             bring it up on PizzaDAO's community calls, and ask your friends within the DAO to support you.
                         </li>
                     </ul>
@@ -226,21 +225,21 @@
     <footer class="border p-2 d-flex flex-column justify-content-center text-center">
         <ul class="d-flex justify-content-center m-0">
             <li class="d-inline-block pe-2">
-                <a href="#">
+                <a href="https://warpcast.com/pizzadao">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path fill="currentColor" d="M18.24.24H5.76A5.76 5.76 0 0 0 0 6v12a5.76 5.76 0 0 0 5.76 5.76h12.48A5.76 5.76 0 0 0 24 18V6A5.76 5.76 0 0 0 18.24.24m.816 17.166v.504a.49.49 0 0 1 .543.48v.568h-5.143v-.569A.49.49 0 0 1 15 17.91v-.504c0-.22.153-.402.358-.458l-.01-4.364c-.158-1.737-1.64-3.098-3.443-3.098s-3.285 1.361-3.443 3.098l-.01 4.358c.228.042.532.208.54.464v.504a.49.49 0 0 1 .543.48v.568H4.392v-.569a.49.49 0 0 1 .543-.479v-.504c0-.253.201-.454.454-.472V9.039h-.49l-.61-2.031H6.93V5.042h9.95v1.966h2.822l-.61 2.03h-.49v7.896c.252.017.453.22.453.472" />
                     </svg>
                 </a>
             </li>
             <li class="d-inline-block pe-2">
-              <a href="#" class="">
+              <a href="https://twitter.com/rarepizzas" class="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M23.954 4.569c-.885.394-1.83.658-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.951.555-2.005.959-3.127 1.184-.897-.958-2.178-1.555-3.594-1.555-2.717 0-4.918 2.201-4.918 4.917 0 .39.045.765.127 1.124-4.083-.205-7.699-2.159-10.125-5.138-.422.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.806-.026-1.566-.247-2.229-.616v.061c0 2.385 1.697 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.317 0-.626-.03-.927-.086.627 1.956 2.444 3.379 4.6 3.419-1.684 1.319-3.808 2.105-6.115 2.105-.398 0-.79-.023-1.175-.069 2.189 1.402 4.768 2.22 7.548 2.22 9.057 0 14.007-7.496 14.007-13.986 0-.209 0-.42-.015-.63.961-.695 1.8-1.562 2.462-2.549z"/>
                 </svg>
               </a>
             </li>
             <li  class="d-inline-block pe-2">
-                <a href="#">
+                <a href="https://discord.gg/pizzadao">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
                         <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
                     </svg>
