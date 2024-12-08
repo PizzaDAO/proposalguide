@@ -14,25 +14,28 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header class="container-fluid d-flex justify-content-center p-3">
-	    <h1 class="">PizzaDAO Proposal Recipe</h1>
+<body class="rubik-header-text overscroll-nonetext-black">
+    <header class="z-10 mx-auto bg-yellow-400 lg:sticky lg:top-0 lg:px-6">
+        <nav class="flex items-center justify-between px-10 py-4 ">
+            <img src="assets/logo.png" alt="Pizza Faucet" class="h-6 w-auto lg:h-8 logo" />
+            <h1 class="text-xl font-semibold lg:text-3xl lg:pe-20">PizzaDAO Proposal Recipe</h1>
+        </nav>
     </header>
     <main class="container">
-        <section id="intro" class="text-start">
+        <section id="intro" class="text-start pt-3">
             This recipe describes step by step how to submit a PizzaDAO proposal, also checkout these 
-            <a 
-                role="button" class="text-primary" 
-                data-bs-toggle="modal" data-bs-target="#tip-modal"
-            >list of tips</a> on how best to promote your proposal. Remember, only Box and Pizza NFT holders are able to submit PizzaDAO proposals. 
+            <a role="button" class="text-[#EF4444] font-semibold gluten-text" data-bs-toggle="modal" data-bs-target="#tip-modal">list of tips</a> 
+            on how best to promote your proposal. Remember, only Box and Pizza NFT holders are able to submit PizzaDAO proposals. 
             If you do not have the nft, you can purchase a box at <a target="_blank" href="https://www.rarepizzas.com">RarePizzas.com</a>. <br />
             You can also get an NFT holder to vouch for you. These people would be called 'PizzaDAO Proposal Sponsors'. 
             You can put their username in your proposal.
         </section>
         <section id="claim-role" class="mt-4">
-            <h4>Connect Wallet to CollabLand in PizzaDAO Discord to Claim Role</h4>
+            <h4 class="text-lg font-bold">Connect Wallet to CollabLand in PizzaDAO Discord to Claim Role</h4>
             <p>Follow these steps to connect your wallet and get your role, skip this steps if you already have Box or Pizza Mafia role:</p>
             <ol class="mb-0">
                 <li>
@@ -217,6 +220,9 @@
                 </div>
             </div>
         </section>
+        <!-- <div class="position-fixed ">
+            <img alt="molto-benny" src="./assets/molto benny.gif" />
+        </div> -->
     </main>
     <footer class="border p-2 d-flex flex-column justify-content-center text-center">
         <ul class="d-flex justify-content-center m-0">

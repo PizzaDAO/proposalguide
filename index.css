@@ -8,23 +8,32 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    color: #ff6347;
+    color: #EF4444;
     margin-bottom: 10px;
+    font-family: "Gluten", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
 }
 
-img{
+.logo{
     height: 300px;
-    width: 150px;
+    width: 250px;
     border-radius: 10px;
-    gap: 10px
-    ;
+    gap: 10px;
 }
 .start{
     display: flex;
     flex-direction: column;
     align-items: center;
-      text-align: center;
+    text-align: center;
 }
+
+.container {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+}
+
 .start img{
     max-width: 100%;
       height: auto;
@@ -182,12 +191,24 @@ img{
         font-size: 1em;
     }
 
-
-
-
     .Proposaltemplate img {
         max-width: 100%;
         height: auto;
         border-radius: 10px;
     }
+}
+
+.gluten-text {
+  font-family: "Gluten", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+
+.rubik-header-text {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
 }
