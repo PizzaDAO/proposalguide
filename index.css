@@ -15,7 +15,9 @@ h1, h2, h3, h4, h5 {
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
-
+.bg-yellow-500 {
+	background-color: #ff6347
+}
 .logo{
     height: 300px;
     width: 250px;
