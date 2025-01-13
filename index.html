@@ -20,7 +20,7 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="rubik-header-text overscroll-nonetext-black lg:text-lg">
-    <header class="z-10 mx-auto bg-yellow-500 bg-opacity-100 lg:sticky lg:top-0 p-0 lg:px-6" style="background-color: #f53e46;">
+    <header class="z-10 mx-auto bg-yellow-3/50 bg-opacity-100 lg:sticky lg:top-0 p-0 lg:px-6" style="background-color: #f53e46;">
         <nav class="flex flex-col md:flex-row items-center justify-center md:justify-between md:px-10 py-4 ">
             <img src="assets/logo-white.png" alt="Pizza Faucet" class="h-6 w-auto lg:h-8 logo" />
             <h1 class="text-center text-xl font-semibold md:text-2xl lg:text-3xl lg:pe-20" style="color: #ffffff;">PizzaDAO Proposal Recipe</h1>
@@ -32,7 +32,7 @@
             <a role="button" class="text-[#EF4444] font-semibold gluten-text" data-bs-toggle="modal" data-bs-target="#tip-modal">list of tips</a> 
             on how to curry favor with the famiglia. Only PizzaDAO NFT holders can submit PizzaDAO proposals, capiche? 
             If you don't have one, you can get one at 
-            <a  class="text-[#EF4444] font-semibold gluten-text" target="_blank" href="https://www.rarepizzas.com">RarePizzas.com</a> or
+            <a  class="text-[#  f53e46] font-semibold gluten-text" target="_blank" href="https://www.rarepizzas.com">RarePizzas.com</a> or
             ask a holder to sponsor your proposal.
         </section>
         <section id="claim-role" class="mt-4">
@@ -70,7 +70,7 @@
         </section>
         <section id="create-proposal" class="mt-4">
             <!-- <img src="./pizzadaogif.gif" alt="Seshbot Poll Selector"> -->
-            <h4 class="text-[#EF4444] text-lg lg:text-xl font-bold">Start Creating Your Proposal</h4>
+            <h4 class="text-color text-lg lg:text-xl font-bold">Start Creating Your Proposal</h4>
             To create your proposal, first connect to the 
             <a class="gluten-text text-[#EF4444]" href="https://sesh.fyi/dashboard/812097286003359764/polls/create?channel_id=969802552495456256" target="_blank">
                 PizzaDAO Poll Creator
@@ -97,40 +97,110 @@
                 </li>
                 <li>
                     <strong class="gluten-text">Enter Description:</strong> <br />
-                    Fill the description field following the template provided below and if its not fit your proposal. Check 
-                    <a class="gluten-text text-[#EF4444]" href="https://docs.google.com/document/d/10tTWXE76vDTawuYtzesCfbpoeXI36gItMsaEmC0UrzM/edit" target="_blank">here</a>, <br />
+                    Fill the description field following the template provided below and if its not fit your proposal.<br />Check 
+                    <a class="gluten-text text-color" href="https://docs.google.com/document/d/10tTWXE76vDTawuYtzesCfbpoeXI36gItMsaEmC0UrzM/edit" target="_blank">here</a>,
                     for more templates.
-                    <div class="block max-w-3xl px-6 pb-6 mb-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800">
-                        <div class="pt-3 flex justify-between">
+                    <div class="block max-w-2xl px-6 pb-6 mb-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800">
+                        <div class="pt-3 mb-3 flex items-center justify-between">
                             <h5>Event/Party Proposal</h5>
-                            <span id="copy" class="text-sm border rounded-lg p-1 content-center cursor-pointer :hover:bg-gray-700 flex">
-                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"/>
-                                </svg>
-                                copy
-                            </span>
+                            <div>
+                                <span id="copy" class="text-sm border rounded-lg p-1 content-center cursor-pointer :hover:bg-gray-700 flex">
+                                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"/>
+                                    </svg>
+                                    copy
+                                </span>
+                                <span>preview</span>
+                            </div>
+                        
                         </div>
-                        <ul id="template">
-                            <li>**Event:**</li>
-                            <li>**Member:**</li>
-                            <li>**PizzaDAO Proposal Sponsor:**</li>
-                            <li>**Location:**</li>
-                            <li>**Date:**</li>
-                            <li>**Comp/Cost:**</li>
-                            <li>**Budget Breakdown:**</li>
-                            <li>** 👍 Ayes + Abstains Needed:** 15 for $625 or less, 25 for $625-2,500, 35 for everything else</li>
-                            <li>**Estimated Attendance:**</li>
-                            <li>**Other Confirmed Event Sponsors:**</li>
-                            <li>**Ordering Pizza From:**</li>
-                            <li>**Description & How This Benefits PizzaDAO:**</li>
-                            <li>
-                                I have reviewed the Standard Operating Procedure (accessible at 
-                                <a 
-                                    href="https://docs.google.com/document/d/1pB1oNcfBj_LHhljzOrV97BU1pfr77msZnZXdIsT_06g/edit?usp=sharing" 
-                                    target="_blank"
-                                >PizzaDAO SOP</a>)<br /> and hereby acknowledge my commitment to adhere to its terms.
-                            </li>
-                        </ul>
+                        <form class="text-right mr-4" id="template">                            
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">Event Name: </label>
+                                <input type="email" name="event" id="event" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="**Event:**" 
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">PizzaDAO Member: </label>
+                                <input type="email" name="member" id="member" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder="**Member:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">Proposal Sponsor: </label>
+                                <input type="email" name="sponsor" id="sponsor" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"  placeholder="**PizzaDAO Proposal Sponsor:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">Location: </label>
+                                <input type="email" name="location" id="location" 
+                                  class="py-2.5 w-3/5 px-0 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"   placeholder="**Location:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">Date: </label>
+                                <input type="date" name="date" id="date" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"   placeholder="**Date:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">Comp/Cost: </label>
+                                <input type="email" name="cost" id="cost" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"   placeholder="**Comp/Cost:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label for="attendance" class="mr-3">
+                                    Attendance:
+                                </label>
+                                <input type="email" name="attendance" id="attendance" 
+                                    class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"   placeholder="**Estimated Attendance:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">Event Sponsors: </label>
+                                <input type="email" name="event-sponsor" id="event-sponsor" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"   placeholder="**Other Confirmed Event Sponsors:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3">Ordering Pizza From</label>
+                                <input type="email" name="pizza" id="pizza" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"   placeholder="**Ordering Pizza From:**"
+                                />
+                            </div>
+                            <div class="relative z-0 w-full flex items-center justify-end mb-3 group">
+                                <label class="mr-3">How This Benefits PizzaDAO: </label>
+                                <textarea type="email" name="pizza" id="pizza" 
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"    placeholder="**Description & How This Benefits PizzaDAO:**"
+                                ></textarea>
+                            </div>
+                            <div class="relative z-0 w-full flex items-center justify-end mb-3 group">
+                                <label class="mr-3" for="budget">Budget Breakdown: </label>
+                                <textarea type="email" name="budget" id="budget"
+                                  class="py-2.5 px-0 w-3/5 text-sm text-gray-900 bg-transparent border-b-2 border-gray-300 appearance-none        dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"   placeholder="**Budget Breakdown:**"
+                                ></textarea>
+                            </div>
+                            <div class="relative z-0 w-full mb-3 group">
+                                <label class="mr-3" for="ayes"> 👍 Ayes + Abstains: </label>
+                                <select 
+                                  id="ayes" 
+                                  class="bg-transparent w-3/5 border-b-2 border-gray-300 text-sm text-gray-900 px-2 py-1 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer">
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="15 for $625 or less">15 for $625 or less</option>
+                                    <option value="25 for $625-2,500">25 for $625-2,500</option>
+                                    <option value="35 for everything else">35 for everything else</option>
+                                </select>
+                            </div>
+                        </form>
+                        <p class="text-right">
+                            I have reviewed the Standard Operating Procedure <br />(accessible at 
+                            <a href="https://docs.google.com/document/d/1pB1oNcfBj_LHhljzOrV97BU1pfr77msZnZXdIsT_06g/edit?usp=sharing" target="_blank">
+                                PizzaDAO SOP
+                            </a>) and hereby acknowledge my commitment to adhere to its terms.
+                        </p>
                     </div>                    
                 </li>
                 <li>
@@ -230,9 +300,6 @@
                 </div>
             </div>
         </section>
-        <!-- <div class="position-fixed ">
-            <img alt="molto-benny" src="./assets/molto benny.gif" />
-        </div> -->
     </main>
     <footer class="border p-2 d-flex flex-column justify-content-center text-center">
         <ul class="d-flex justify-content-center m-0">
@@ -265,6 +332,7 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     ></script>
     <script>
+        let items = ["**Event:", "**Member:", "**PizzaDAO Proposal Sponsor:", "**Location:", ]
         let copyBtn = document.querySelector("#copy")
         let template = document.querySelector("#template")
         let hasShownModal = localStorage.getItem('hasShownModal')
@@ -274,6 +342,12 @@
             localStorage.setItem('hasShownModal', 'true')
         }
         copyBtn.addEventListener('click', () => {
+            const formData = new FormData(template)
+            const values = [...formData.values()]
+            console.log(values)
+            values.forEach(value => {
+
+            })
             let list = template.childNodes.values()
             .filter(child => child.nodeName !== '#text');
             let templateArr = template.childNodes.values()
@@ -284,10 +358,9 @@
                 .then(() => {
                     copyBtn.innerHTML = 'copied'
                     setTimeout(() => {
-                        copyBtn.innerHTML = `<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        copyBtn.innerHTML = `<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"    height="24" fill="none" viewBox="0 0 24 24">
                                     <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z"/>
-                                </svg>
-                                copy`
+                                </svg> copy`
                     }, 1000)
                 })
         })

@@ -122,6 +122,10 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 8px;
 }
 
+.text-color {
+    color: #EF4444;
+}
+
 .timer-images {
     display: flex;
       justify-content: space-around;
