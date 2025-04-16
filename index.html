@@ -36,6 +36,59 @@
     </nav>
   </header>
 
+  <!-- Tips Modal -->
+  <section id="tip-modal" class="modal fade" tabindex="-1" aria-labelledby="tipModalLabel" aria-hidden="true">
+    <div class="modal-dialog mt-4 modal-lg">
+      <div class="modal-content tipcontainer mb-2">
+        <div class="modal-header p-0 position-relative">
+          <h4 class="pt-2 mt-2 text-md md:text-xl font-bold"> Before you begin, here are some tips from the
+            famiglia 🤌</h4>
+          <button type="button" class="position-absolute end-0 top-0 btn-close" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <ul class="modal-body">
+          <li>
+            <strong class="gluten-text">Engage the community:</strong> Participate in the PizzaDAO Discord to
+            establish yourself within the pizza mafia.
+            Join community calls on Sundays at 1pm EST and join crew calls throughout the week.
+          </li>
+          <li>
+            <strong class="gluten-text">Network and build relationships:</strong> Establish connections with
+            other PizzaDAO members who share common interests.
+            Building a network within the community can lead to increased support for your proposal.
+          </li>
+          <li>
+            <strong class="gluten-text">Build a strong case:</strong> Clearly explain how your proposal aligns
+            with PizzaDAO's mission and benefits the community.
+            Use compelling language and visuals to make your case stand out.
+          </li>
+          <li>
+            <strong class="gluten-text">Answer questions:</strong> Be responsive to community members'
+            questions and concerns.
+            Providing thorough responses can build trust and garner more votes
+          </li>
+          <li>
+            <strong class="gluten-text">Collaborate with others:</strong> Seek endorsements or partnerships
+            with established
+            members or projects within PizzaDAO for credibility and more votes.
+          </li>
+          <li>
+            <strong class="gluten-text">Communicate updates:</strong> Update the community on your proposal's
+            progress.
+            Share achievements and milestones in general chat or in your proposal's thread.
+          </li>
+          <li>
+            <strong class="gluten-text">Socialize your proposal:</strong> Share it strategically in relevant
+            channels,
+            bring it up on PizzaDAO's community calls, and ask your friends within the DAO to support you.
+          </li>
+        </ul>
+        <p> By focusing on these aspects, you can significantly increase your chances of getting more 👍 votes
+          for your proposal in PizzaDAO. </p>
+      </div>
+    </div>
+  </section>
+
   <!-- Hero Image + Title -->
   <section
     class="flex flex-col lg:flex-row items-center justify-center px-6 py-12 space-y-8 lg:space-y-0 lg:space-x-12 lg:mx-15">
@@ -44,11 +97,15 @@
     <div>
       <h1 class="text-4xl lg:text-5xl font-extrabold">PizzaDAO Proposal Recipe</h1>
       <p class="max-w-4xl mx-auto text-lg leading-relaxed pb-10 text-left">
-        Here's a recipe for getting some dough from the pizza mafia, plus a list of tips on how to curry favor
+        Here's a recipe for getting some dough from the pizza mafia,
+        <a role="button" class="text-[#EF4444] font-semibold gluten-text" data-bs-toggle="modal"
+          data-bs-target="#tip-modal">list of tips</a>
+        on how to curry favor
         with the Familia.
         Only PizzaDAO NFT holders can submit PizzaDAO proposals, capiche?
         If you don't have one, you can get one at
-        <a href="https://rarepizzas.com" class="text-blue-600 underline" target="_blank">RarePizzas.com</a> or
+        <a href="https://rarepizzas.com" class="text-blue-600 underline gluten-text " target="_blank">RarePizzas.com</a>
+        or
         ask a holder to sponsor your proposal.
       </p>
     </div>
@@ -240,7 +297,15 @@
     </div>
     © 2024. PizzaDAO. All rights reserved.
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"></script>
   <script>
+    let hasShownModal = localStorage.getItem('hasShownModal')
+    var tipModal = new bootstrap.Modal(document.getElementById('tip-modal'))
+    if (!hasShownModal) {
+      tipModal.show()
+      localStorage.setItem('hasShownModal', 'true')
+    }
     let items = [
       "**Event:**", "**Member:**", "**PizzaDAO Proposal Sponsor:**", "**Location:**", "**Date:**", "**Comp/Cost:**",
       "**Estimated Attendance:**", "**Other Confirmed Event Sponsors:**", "**Ordering Pizza From:**", "**Description & How This Benefits PizzaDAO:**",
