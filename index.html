@@ -338,7 +338,6 @@
     let copyBtn = document.querySelector("#copy")
     let template = document.querySelector("#template")
     copyBtn.addEventListener('click', () => {
-      console.log(inputs)
       const formData = new FormData(template)
       const values = [...formData.values()]
       const templateText = values.map((value, index) => `${items[index]} ${value}`).join('\n')
