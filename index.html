@@ -297,6 +297,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"></script>
   <script>
+    function fallbackCopyText(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+
+      // Prevent the textarea from being visible
+      textarea.style.position = "absolute";
+      textarea.style.display = "hidden";
+
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+
+      try {
+        document.execCommand("copy");
+        console.log("Text copied using fallback method!");
+      } catch (err) {
+        console.error("Fallback copy failed", err);
+      }
+
+      document.body.removeChild(textarea);
+    }
+
+    function toggleAccordion(id) {
+      const content = document.getElementById(id);
+      content.classList.toggle("hidden");
+    }
+
     let hasShownModal = localStorage.getItem('hasShownModal')
     var tipModal = new bootstrap.Modal(document.getElementById('tip-modal'))
     if (!hasShownModal) {
@@ -316,11 +343,13 @@
       const values = [...formData.values()]
       const templateText = values.map((value, index) => `${items[index]} ${value}`).join('\n')
       console.log(templateText)
-      navigator.clipboard.writeText(templateText)
-        .then(() => {
-          copyBtn.innerHTML = 'copied'
-          setTimeout(() => {
-            copyBtn.innerHTML = `
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(templateText)
+          .then(() => {
+            copyBtn.innerHTML = 'copied'
+            setTimeout(() => {
+              copyBtn.innerHTML = `
               <svg 
                 class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"height="24" fill="none" viewBox="0 0 24 24"
               >
@@ -330,14 +359,17 @@
                 />
               </svg> copy
             `
-          }, 1000)
-        })
+            }, 1000)
+          })
+          .catch(err => {
+            console.error("Clipboard API failed, falling back to legacy method", err);
+            fallbackCopyText(templateText);
+          });
+      } else {
+        // Fallback for mobile and insecure contexts
+        fallbackCopyText(templateText);
+      }
     })
-
-    function toggleAccordion(id) {
-      const content = document.getElementById(id);
-      content.classList.toggle("hidden");
-    }
   </script>
 </body>
 
